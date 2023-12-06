@@ -1,0 +1,435 @@
+/* Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Variables */
+
+:root{
+
+    --bg-body : #1f212c;
+    --primary-color : #2c5bff;
+    --Color-blanco : #fff;
+    --fontSize-title : 40px;
+    --fontSize-parrafos : 20px; 
+    --bg-card-services: #292c36;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a,p,input,li,label,td{
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background: var(--bg-body);
+}
+
+header{
+    padding-top: 50px;
+}
+
+nav.bg-gym {
+    background: var(--bg-body);
+    padding-bottom: 50px;
+}
+
+nav .navbar-brand img {
+    width: 200px;
+}
+
+nav.bg-gym ul li a{
+    color: var(--Color-blanco);
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+
+nav.bg-gym ul li a{
+    margin-top: 14px;
+}
+
+nav.bg-gym ul li a::after{
+    width: 0%;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-gym ul li a:hover{
+    color: var(--primary-color);
+}
+
+nav.bg-gym ul li a:hover::after{
+    background: var(--primary-color);
+    width: 40%;
+}
+
+nav.bg-gym ul li.login {
+    margin-left: 400px;
+    margin-right: 30px;
+}
+
+nav.bg-gym ul li.registro a{
+    display: block;
+    padding: 12px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color: var(--Color-blanco);
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+
+/* HERO */
+
+#hero{
+    padding: 60px 0px;
+}
+
+#hero .cont-foto{
+    position: relative;
+    width: 400px;
+}
+
+#hero .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+
+#hero .cont-foto::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    /* padding-left: 60px; */
+    top: -40px;
+    left: 40px;
+    background: var(--primary-color);
+    z-index: 1;
+}
+
+#hero .cont-info{
+    padding-left: 120px;
+}
+
+#hero .cont-info h1{
+    color: var(--Color-blanco);
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#hero .cont-info h1 span{
+    border-bottom: 8px solid #fff;
+}
+
+#hero .cont-info p{
+    color: #6c6c6c;
+    font-size: var(--fontSize-parrafos);
+    margin-bottom: 60px;
+}
+
+#hero .cont-info .destacada h2{
+    font-size: var(--fontSize-title);
+    color: var(--Color-blanco);
+}
+
+#hero .cont-info .destacada p{
+    font-size: 16px;
+}
+
+/* SERVICIOS*/
+
+#servicios{
+    width: 100%;
+    position: relative;
+    padding: 70px 0 100px;
+    text-align: center;
+}
+
+#servicios h2{
+    color: var(--Color-blanco);
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#servicios h3{
+    text-align: right;
+    font-size: 40px;
+    color: var(--Color-blanco);
+    margin-bottom: 20px;
+}
+
+#servicios h4{
+    color: var(--Color-blanco);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#servicios p{
+    color: #6c6c6c;
+    font-size: var(--fontSize-parrafos);
+}
+
+#servicios .row{
+    padding-top: 70px;
+
+}
+
+#servicios .card-services{
+    background: var(--bg-card-services);
+    border-radius: 5px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+    max-width: 280px;
+    min-height: 360px;
+    transition: .4s;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+#servicios .card-services:hover{
+    background: var(--primary-color);
+}
+
+#servicios .card-services img{
+    background: var(--Color-blanco);
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -30px;
+    left: 40px;
+}
+
+#servicios .card-services p{
+    font-size: 15px;
+    color: #6c6c6c;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+#servicios .card-services a{
+    text-align: right;
+    text-decoration: none;
+    color: #6c6c6c;
+    border-bottom: 2px solid #6c6c6c;
+    display: inline-block;
+}
+
+/* Clases destacdas */
+
+#cdestacadas{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 60px 0;
+}
+
+#cdestacadas h2{
+    font-size: var(--fontSize-title);
+    color: var(--Color-blanco);
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#cdestacadas h2::before{
+    width: 70%;
+    height: 2px;
+    background: var(--Color-blanco);
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+}
+
+#cdestacadas .card-destacadas{
+    border-radius: 5px;
+    position: relative;
+}
+
+#cdestacadas .card-destacadas img{
+    width: 100%;
+}
+
+#cdestacadas .card-destacadas .cont-info{
+    padding: 14px;
+    background-color: var(--bg-card-services);
+    transition: .4s;
+    border-radius: 0 0 4px 4px;
+}
+
+#cdestacadas .card-destacadas .cont-info:hover{
+    background: var(--primary-color);
+}
+
+.card-destacadas .cont-info h3{
+    font-size: 20px;
+    color: var(--Color-blanco);
+    font-weight: 600;
+}
+
+.card-destacadas .cont-info p{
+    color: #6c6c6c;
+    font-size: 16px;
+}
+
+/* Planes */
+
+#planes{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0 100px;
+}
+
+#planes h2{
+    color: var(--Color-blanco);
+    font-size: var(--fontSize-title);
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+#planes p{
+    font-size: var(--fontSize-parrafos);
+    color: #6c6c6c;
+}
+
+#planes .lapso{
+    background: var(--bg-card-services);
+    margin-top: 50px;
+    padding: 40px 70px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+#planes .lapso ul{
+    border: 0 transparent;
+    margin-bottom: 50px;
+    background: #3f434f;
+    max-width: 220px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#planes .lapso ul li button{
+    background: transparent;
+    color: var(--Color-blanco);
+    border-radius: 30px;
+    width: 100px;
+    border: 0 transparent;
+}
+
+#planes .lapso ul li button.active{
+    background: var(--primary-color);
+}
+
+#planes .lapso p{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#planes .lapso p::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    right: 0;
+    top: 8px;
+}
+
+#planes .plan{
+    background: transparent;
+    padding-top: 30px;
+}
+
+#planes .plan .accordion{
+    background: transparent;
+}
+
+#planes .plan .accordion-item, #planes .plan .accordion-item button{
+    background: transparent;
+}
+
+#planes .plan h2{
+    margin: 0;
+    padding: 0;
+    color: var(--Color-blanco);
+    /* padding: 30px; */
+}
+
+#planes .plan .accordion-item button{
+    color: var(--Color-blanco);
+    box-shadow: 0 0 0 transparent;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+#planes .plan .accordion-item{
+    border-radius: 20px;
+    margin: 20px;
+    border: 2px solid var(--Color-blanco);
+}
+
+#planes .plan .accordion-item .accordion-body{
+    color: var(--Color-blanco);
+    font-size: var(--fontSize-parrafos);
+}
+
+#planes .plan .accordion-item button.accordion-button{
+    background: var(--primary-color);
+}
+
+#planes .plan .accordion-item button.accordion-button.collapsed{
+    background: transparent;
+}
+
+/* Responcive */
+
+@media screen and (min-width:320px) and (max-width:990px){
+    header nav button.navbar-toggler{
+        background: var(--primary-color);
+    }
+
+    nav.bg-gym ul li.login{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav.bg-gym ul li.registro a{
+        display: inline-block;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    #hero .cont-foto{
+        width: 100%;
+    }
+
+    #hero .cont-foto::before{
+        left: 0;
+    }
+
+    #cdestacadas h2::before{
+        width: 25%;
+    }
+}
